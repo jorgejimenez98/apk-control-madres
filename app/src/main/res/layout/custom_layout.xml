@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView_mensaje"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/cardview_shadow_end_color"
+    android:backgroundTint="@color/cardview_shadow_end_color"
+    android:backgroundTintMode="src_atop"
+    cardview:cardBackgroundColor="@color/cardview_light_background"
+    cardview:cardCornerRadius="15dp"
+    cardview:cardElevation="3dp"
+    cardview:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/foto_emb_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                cardview:srcCompat="@drawable/fondo3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_row_nombre"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text="Susana Zayas"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/txt_row_semanas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="20"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_color_estado"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:background="@android:color/holo_red_dark"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_row_estado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text="Alto riesgo" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

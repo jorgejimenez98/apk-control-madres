@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.george.controldeembarazadas.MainActivity">
+    <item
+        android:id="@+id/insertar"
+        android:icon="@android:drawable/ic_input_add"
+        android:orderInCategory="100"
+        android:title="Insertar embarazada..."
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/mostrar_lista"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:orderInCategory="100"
+        android:title="Mostrar lista embarazadas..."
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/informacion_app"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:orderInCategory="100"
+        android:title="Información de la app..."
+        app:showAsAction="always" />
+</menu>
